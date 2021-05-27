@@ -1,6 +1,5 @@
 .gradle
 /build/
-lib/
 !gradle/wrapper/gradle-wrapper.jar
 *.hprof
 .DS_Store
@@ -31,3 +30,14 @@ nbdist/
 .vscode/*
 .history
 bin/
+
+
+*.eml
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+css/reveal.min.css
+js/reveal.min.js
+package-lock.json
