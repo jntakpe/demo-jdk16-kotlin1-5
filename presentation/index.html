@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Common libraries</title>
+
+        <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link href="css/theme/sopra-banking.css" rel="stylesheet">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <div class="reveal">
+        <div class="header">
+            <img alt="Sopra banking software" class="logo" src="lib/images/banking-logo.svg"/>
+            <span class="title">Common libraries</span>
+            <span class="author">Jocelyn N'TAKPÉ</span>
+        </div>
+        <div class="slides">
+            <section data-markdown># Java 11 to Java 16</section>
+            <section>
+                <section data-markdown># Record</section>
+                <section data-markdown="slides/record/intro.md"></section>
+                <section data-markdown="slides/record/declaration.md"></section>
+                <section data-markdown="slides/record/regular.md"></section>
+                <section data-markdown="slides/record/getters.md"></section>
+                <section data-markdown="slides/record/equals-tostring.md"></section>
+                <section data-markdown="slides/record/kotlin-data-classes.md"></section>
+                <section data-markdown="slides/record/readings.md"></section>
+            </section>
+            <section>
+                <section data-markdown># Pattern matching</section>
+                <section data-markdown="slides/pattern-matching/intro.md"></section>
+                <section data-markdown="slides/pattern-matching/regular.md"></section>
+                <section data-markdown="slides/pattern-matching/type-patterns.md"></section>
+                <section data-markdown="slides/pattern-matching/destructuring.md"></section>
+                <section data-markdown="slides/pattern-matching/readings.md"></section>
+            </section>
+            <section>
+                <section data-markdown># Sealed class</section>
+                <section data-markdown="slides/sealed/intro.md"></section>
+                <section data-markdown="slides/sealed/declaration.md"></section>
+            </section>
+            <section>
+                <section data-markdown># Kotlin 1.5</section>
+                <section data-markdown="slides/kotlin_1_5/intro.md"></section>
+                <section data-markdown="slides/kotlin_1_5/jvm-records.md"></section>
+                <section data-markdown="slides/kotlin_1_5/sealed-declaration.md"></section>
+                <section data-markdown="slides/kotlin_1_5/sealed-usage.md"></section>
+                <section data-markdown="slides/kotlin_1_5/inline.md"></section>
+                <section data-markdown="slides/kotlin_1_5/inline-usage.md"></section>
+                <section data-markdown="slides/kotlin_1_5/bytecode.md"></section>
+            </section>
+        </div>
+    </div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
